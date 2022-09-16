@@ -31,6 +31,34 @@ export default class ButtonsBar extends Component {
         >
           Insertion Sort
         </button>
+
+        <div className="line"></div>
+
+        <div className="player">
+          <label> Unsorted </label>
+          <div
+            className="label"
+            style={{ backgroundColor: "rgba(61, 90, 241, 0.5)" }}
+          ></div>
+
+          <label>Active </label>
+          <div
+            className="label"
+            style={{ backgroundColor: "rgba(255, 48, 79, 1)" }}
+          ></div>
+
+          <label>Swap</label>
+          <div
+            className="label"
+            style={{ backgroundColor: "rgba(235, 123, 19, 0.5)" }}
+          ></div>
+
+          <label>Sorted</label>
+          <div
+            className="label"
+            style={{ backgroundColor: "rgba(131, 232, 90, 0.5)" }}
+          ></div>
+        </div>
       </div>
     );
   }

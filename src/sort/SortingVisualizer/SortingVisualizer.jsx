@@ -144,27 +144,29 @@ export default class SortingVisualizer extends Component {
     ));
 
     return (
-      <div className="main-container">
-        <Header />
-        <ButtonsBar
-          generateNewArray={this.generateNewArray}
-          bubbleSort={this.bubbleSort}
-          selectionSort={this.selectionSort}
-          insertionSort={this.insertionSort}
-        />
+      <div className="sv">
+        <div className="main-container">
+          <Header />
+          <ButtonsBar
+            generateNewArray={this.generateNewArray}
+            bubbleSort={this.bubbleSort}
+            selectionSort={this.selectionSort}
+            insertionSort={this.insertionSort}
+          />
 
-        <div className="bar-cont"> {bars}</div>
+          <div className="bar-cont"> {bars}</div>
 
-        <RangeSlider
-          numberOfArrayBars={this.state.numberOfArrayBars}
-          animationSpeed={this.state.animationSpeed}
-          onChangeArrayBarRangeSlider={this.onChangeArrayBarRangeSlider}
-          onChangeAnimationSpeedRangeSlider={
-            this.onChangeAnimationSpeedRangeSlider
-          }
-        />
+          <RangeSlider
+            numberOfArrayBars={this.state.numberOfArrayBars}
+            animationSpeed={this.state.animationSpeed}
+            onChangeArrayBarRangeSlider={this.onChangeArrayBarRangeSlider}
+            onChangeAnimationSpeedRangeSlider={
+              this.onChangeAnimationSpeedRangeSlider
+            }
+          />
 
-        <Info runningAlgo={this.state.running}></Info>
+          <Info runningAlgo={this.state.running}></Info>
+        </div>
       </div>
     );
   }

@@ -1,12 +1,12 @@
 
-.info-container {
+.pv .info-container {
     color: rgb(0, 29, 67);
     position: relative;
     margin: 50px;
     padding-bottom: 5px;
   }
 
-  .info-container .info-head {
+ .pv  .info-container .info-head {
     margin-bottom: 20px;
     padding-top: 20px;
     letter-spacing: 0.4px;
@@ -17,20 +17,26 @@
 }
 
   
-  .info-container p{
+  .pv .info-container p{
     letter-spacing: 0.1px;
     line-height: 1.6em;
     margin-bottom: 20px;
     text-align: left;
-    font-size: medium;
+    font-size: large;
 }
 
-.info-container .info-list {
+.pv .info-container li{
+  font-size: large;
+  margin-top: 10px;
+
+}
+
+.pv .info-container .info-list {
   margin: 20px 20px;
   text-align: left;
 }
 
-.pseudocode {
+.pv .pseudocode {
   text-align: left;
   margin-bottom: 30px;
   padding: 0 250px;
@@ -39,7 +45,7 @@
   overflow-y: auto;
 }
 
-.code {
+.pv .code {
     text-align: left;
     padding: 0 250px;
     height: 500px;
@@ -51,10 +57,15 @@
 
 
 
-img{
-  width:60%;
+.pv img{
+  width:80%;
+  margin-left: 10vw;
 }
 
-.info-container .image-cap {
+.pv .info-container .image-cap {
   font-style: italic;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+

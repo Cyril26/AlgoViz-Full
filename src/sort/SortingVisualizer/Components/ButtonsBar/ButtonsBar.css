@@ -1,4 +1,4 @@
-.buttons-bar {
+.sv .buttons-bar {
   height: 7%;
   display: flex;
   justify-content: center;
@@ -6,7 +6,7 @@
   background-color: white;
 }
 
-button {
+.sv button {
   font-family: 'Poppins';
   height: 50%;
   border: none;
@@ -21,25 +21,47 @@ button {
   transition: 0.3s;
 }
 
+.sv .buttons-bar .player{
+  color: rgb(0, 69, 119);
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.sv .buttons-bar .line{
+width: 1px;
+height: 30px;
+background-color: rgb(130, 178, 210);
+}
+
+.sv .buttons-bar .player div{
+  width:20px;
+  height:20px;
+  margin:20px;
+}
+
 @media only screen and (max-width: 510px) {
-  button {
+  .sv button {
     font-size: xx-small;
   }
 }
 
 @media only screen and (max-width: 410px) {
-  button {
+  .sv button {
     font-size: x-small;
   }
 }
 
 @media only screen and (max-width: 320px) {
-  button {
+  .sv button {
     font-size: xx-small;
   }
 }
 
-button:hover {
+.sv button:hover {
   font-style: bold;
   border-width: 0.3vh;
   cursor: pointer;
@@ -47,7 +69,7 @@ button:hover {
   transform: scale(1.1);
 }
 
-.buttonStyle1:hover {
+.sv .buttonStyle1:hover {
   font-style: bold;
   opacity: 0.9;
   background-color: #9acceb;
@@ -57,33 +79,34 @@ button:hover {
 
 
 
-#reset {
+.sv #reset {
   /* opacity: 0.6; */
   font-size: 12px;
   display: flex;
   justify-content: center;
-    font-weight: 500;
-    position: relative;
-    margin-left: 6px;
-    padding: 5px 10px 5px 10px;
-    cursor: pointer;
-    transition-duration: .8s;
-    color: rgb(0, 142, 87);
-    /* border-color: #48c9b0; */
-    border-radius: 5px;
-    background-color: none;
+  align-items: center;
+  font-weight: 500;
+  position: relative;
+  margin-left: 6px;
+  padding: 5px 10px 5px 10px;
+  cursor: pointer;
+  transition-duration: .8s;
+  color: rgb(0, 142, 87);
+  /* border-color: #48c9b0; */
+  border-radius: 5px;
+  background-color: none;
 }
-#reset:hover {
+.sv #reset:hover {
   opacity: 0.9;
   background-color: #87dfcc;
   color: rgb(0, 33, 67);
   font-weight: 500;
 }
 
-button:disabled,
-.buttonStyle1:disabled,
-.buttonStyle2:disabled,
-#reset:disabled {
+.sv button:disabled,
+.sv .buttonStyle1:disabled,
+.sv .buttonStyle2:disabled,
+.sv #reset:disabled {
   background-color: grey;
   color: white;
   border-width: 0vw;

@@ -3,15 +3,31 @@
     margin: 0;
     padding: 0;
 }
+.pv body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .pv code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
 
 
-.pathfindingVisualizer
+
+
+.pv .pathfindingVisualizer
 {
     min-width: 100%;
     max-width: 100%;
 }
 
-.pathfindingVisualizer .container
+.pv .pathfindingVisualizer .container
 {
     min-width: 100%;
     max-width: 100%;
@@ -20,7 +36,7 @@
     background-color: #00544f;
 }
 
-.pathfindingVisualizer .container .heading
+.pv .pathfindingVisualizer .container .heading
 {
     display: flex; 
     padding: 5px 10px 10px 10px;
@@ -28,12 +44,12 @@
     justify-content: center;
 }
 
-.pathfindingVisualizer .container .heading h2
+.pv .pathfindingVisualizer .container .heading h2
 {
     cursor: pointer;
 }
 
-.textBox
+.pv .textBox
 {
     line-height: 20px;
     display: flex;
@@ -41,7 +57,7 @@
     justify-content: space-around;
 }
 
-.textBox .weightContainer input
+.pv .textBox .weightContainer input
 {
     height: 20px;
     text-align: center;
@@ -49,7 +65,7 @@
     background-color: transparent;
 }
 
-.textBox .weightContainer button
+.pv .textBox .weightContainer button
 {
     font-size: 12px;
     font-weight: 500;
@@ -63,7 +79,7 @@
     background-color: #48c9b0;
 }
 
-.textBox .weightContainer button:hover
+.pv .textBox .weightContainer button:hover
 {
     background-color: #a6f9e8;
     color: rgb(0, 34, 66);
@@ -71,11 +87,11 @@
     transform: scale(1.1);
 }
 
-.textBox .startPointContainer
+.pv .textBox .startPointContainer
 {
     font-weight: 500;
 }
-.textBox .startPointContainer input
+.pv .textBox .startPointContainer input
 {
     width: 40px;
     height: 20px;
@@ -86,12 +102,12 @@
     background-color: transparent;
 }
 
-.textBox .endPointContainer
+.pv .textBox .endPointContainer
 {
     font-weight: 500;
 }
 
-.textBox .endPointContainer input
+.pv .textBox .endPointContainer input
 {
     width: 40px;
     height: 20px;
@@ -102,20 +118,20 @@
     background-color: transparent;
 }
 
-.container p
+.pv .container p
 {
     padding: 8px 10px 5px 10px;
 }
 
 
-.btn-con{
+.pv .btn-con{
     width:auto;
     display: flex;
     flex-direction: row;
 }
 
 
-.btn-red{
+.pv .btn-red{
     background-color: #fd2424;
     border-color: #fd2424;
 }
@@ -124,27 +140,27 @@
     transform: scale(1.1);
 }
 
-.btn-amber{
+.pv .btn-amber{
     background-color: rgb(255, 179, 0);
     border-color: rgb(255, 200, 0);
 }
-.btn-amber:hover{
+.pv .btn-amber:hover{
     background-color: rgb(255, 228, 131);;
     transform: scale(1.1);
 }
 
 
-.btn-blue{
+.pv .btn-blue{
     background-color: rgb(0, 102, 255);
     border-color: rgb(0, 102, 255);
 }
-.btn-blue:hover{
+.pv .btn-blue:hover{
     background-color: rgb(123, 175, 253);
     transform: scale(1.1);
 }
 
 
-.buttonContainer
+.pv .buttonContainer
 {
     font-size: 8px;
     font-weight: 800;
@@ -160,17 +176,17 @@
 
 
 
-.btn:hover
+.pv .btn:hover
 {
     color: rgb(0, 38, 67);
 }
 
-.buttonContainer p
+.pv .buttonContainer p
 {
     padding: 0;
 }
 
-.visualGridContainer .gridBox
+.pv .visualGridContainer .gridBox
 {
     min-width: 80%;
     max-width: 80%;
@@ -182,11 +198,11 @@
 
 @media(max-width:780px)
 {
-    body
+   .pv  body
     {
         background-color: #00254b;
     }
-    .visualGridContainer .gridBox
+    .pv .visualGridContainer .gridBox
     {
         min-width: 200%;
         max-width: 200%;
@@ -196,7 +212,7 @@
         background-color: #fff;
     }
 
-    .pathfindingVisualizer .container
+    .pv .pathfindingVisualizer .container
     {
         min-width: 200%;
         max-width: 200%;
@@ -206,7 +222,7 @@
         background-color: #34495e;
     }
 
-    .ref::before
+    .pv .ref::before
     {
         font-weight: bold;
 
@@ -217,12 +233,12 @@
 }
 
 
-.info { 
+.pv .info { 
     margin: 50px;
     color: #00254b;
 }
 
-.info .info-head {
+.pv .info .info-head {
     margin-bottom: 20px;
     padding-top: 20px;
     letter-spacing: 0.4px;
@@ -235,7 +251,7 @@
 
 
 
-.info p{
+.pv .info p{
     letter-spacing: 0.1px;
     line-height: 1.6em;
     margin-bottom: 20px;
@@ -245,19 +261,19 @@
 
 
 
-.info img {
+.pv .info img {
     width: 60%;
     /* padding-bottom: 10px; */
 }
 
 
-.info .image-cap{
+.pv .info .image-cap{
     font-style: italic;
     font-size: 12px;
     color: #848484;
 }
 
-.info ul li{
+.pv .info ul li{
     text-align: left;
     padding: 10px 5px;
 }

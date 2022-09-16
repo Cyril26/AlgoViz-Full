@@ -1,4 +1,4 @@
-.node
+.pv .node
 {
     width: 30px;
     height: 22px;
@@ -6,14 +6,14 @@
     /* Using inline block as we are storing every row in a separate div */
 }
 
-.node-start
+.pv .node-start
 {
     background-color: rgb(233, 30, 30);
     background-position: center;
     background-size: cover;
 }
 
-.node-finish
+.pv .node-finish
 {
     background-color: rgb(0, 140, 255);
     background-repeat: no-repeat;
@@ -21,19 +21,19 @@
     background-size: cover;
 }
 
-.node-wall
+.pv .node-wall
 {
     border: 1px solid #34495e;
     background-color: #34495e;
 }
-.node-weight
+.pv .node-weight
 {
     background-image: url(images/weight.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.node-visited
+.pv .node-visited
 {
     animation-name: visitedAnimation;
     animation-duration: 1.5s;
@@ -70,7 +70,7 @@
     }
 }
 
-.node-visitedWeight
+.pv .node-visitedWeight
 {
     animation-name: visitedWeightAnimation;
     animation-duration: 1.5s;
@@ -112,7 +112,7 @@
     }
 }
 
-.node-path
+.pv .node-path
 {
     animation-name: shortestPathAnimation;
     animation-duration: 1.5s;
@@ -151,7 +151,7 @@
     }
 }
 
-.node-path-weight
+.pv .node-path-weight
 {
     animation-name: shortestPathAnimationWeight;
     animation-duration: 1.5s;

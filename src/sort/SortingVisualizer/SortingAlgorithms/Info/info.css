@@ -1,12 +1,12 @@
 
-.info-container {
+.sv .info-container {
     color: rgb(0, 29, 67);
     position: relative;
     margin: 50px;
     padding-bottom: 100px;
   }
 
-  .info-container .info-header {
+  .sv .info-container .info-header {
     margin-bottom: 20px;
     padding-top: 20px;
     letter-spacing: 0.4px;
@@ -17,7 +17,7 @@
 }
 
   
-  .info-container p{
+  .sv .info-container p{
     letter-spacing: 0.1px;
     line-height: 1.6em;
     margin-bottom: 20px;
@@ -25,11 +25,11 @@
     font-size: medium;
 }
 
-.info-container .info-list {
+.sv .info-container .info-list {
   margin: 20px 50px;
 }
 
-.pseudocode {
+.sv .pseudocode {
   text-align: left;
   margin-bottom: 30px;
   padding: 0 250px;
@@ -38,7 +38,7 @@
   overflow-y: auto;
 }
 
-.code {
+.sv .code {
     text-align: left;
     padding: 0 250px;
     height: 500px;
@@ -49,7 +49,7 @@
 }
 
 
-.info-container .info-table{
+.sv .info-container .info-table{
   margin-left: 25%;
   overflow-x: auto;
   width: 50%;
@@ -61,12 +61,12 @@
 }
 
 
-table th {
+.sv table th {
   font-weight: 400;
   text-align: left;
 }
 
-table td, table th {
+.sv table td, table th {
   padding: 12px 8px;
   border-bottom: 1px solid rgba(0,0,0,.1);
   width: 88%;

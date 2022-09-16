@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Node from "../Node/Node.jsx";
 import { showPopUp } from "../Guide/Guide.jsx";
 import Info from "../Info/Info.jsx";
+import { Guide } from "../Guide/Guide.jsx";
 
 import { dijkstra } from "../algorithms/dj";
 import { AStar } from "../algorithms/aStar";
@@ -404,7 +405,8 @@ export default class PathfindingVisualizer extends Component {
               "node node-path-weight";
           } else if (
             nodeClassName !== "node node-start" &&
-            nodeClassName !== "node node-finish"
+            nodeClassName !== "node node-finish" &&
+            nodeClassName !== "node node-wall"
           ) {
             document.getElementById(`node-${node.row}-${node.col}`).className =
               "node node-path";
@@ -749,61 +751,68 @@ export default class PathfindingVisualizer extends Component {
 
     return (
       <>
-        <div className="pathfindingVisualizer">
-          <div className="container">
-            <div className="heading">
-              <h2 onClick={showPopUp}>{topMessage}</h2>
-            </div>
+        <div className="pv">
+          <div className="pathfindingVisualizer">
+            <div className="container">
+              <div className="heading">
+                <h2 onClick={showPopUp}>{topMessage}</h2>
+              </div>
 
-            {/* Show the header */}
-            {textBox}
+              {/* Show the header */}
+              {textBox}
 
-            {/* <p>
+              {/* <p>
               Dijkstra's Algorithm is weighted and guarantees the shortest path!{" "}
               <span className="ref"></span>
             </p> */}
-          </div>
+            </div>
 
-          <div className="visualGridContainer">
-            <div className="gridBox">
-              <table className="grid" style={{ borderSpacing: "0" }}>
-                <tbody>
-                  {grid.map((row, rowIndex) => {
-                    return (
-                      <tr key={rowIndex}>
-                        {row.map((node, nodeIndex) => {
-                          const { isStart, isFinish, isWall, isWeight } = node; //Extracting from the node
-                          return (
-                            <Node
-                              row={rowIndex}
-                              col={nodeIndex}
-                              key={rowIndex + "-" + nodeIndex}
-                              isStart={isStart}
-                              isFinish={isFinish}
-                              isWall={isWall}
-                              isWeight={isWeight}
-                              mouseIsPressed={mouseIsPressed}
-                              onMouseDown={(row, col) =>
-                                this.handleMouseDown(row, col)
-                              }
-                              onMouseEnter={(row, col) =>
-                                this.handleMouseEnter(row, col)
-                              }
-                              onMouseUp={() => this.handleMouseUp()}
-                            ></Node>
-                          );
-                        })}
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+            <div className="visualGridContainer">
+              <div className="gridBox">
+                <table className="grid" style={{ borderSpacing: "0" }}>
+                  <tbody>
+                    {grid.map((row, rowIndex) => {
+                      return (
+                        <tr key={rowIndex}>
+                          {row.map((node, nodeIndex) => {
+                            const { isStart, isFinish, isWall, isWeight } =
+                              node; //Extracting from the node
+                            return (
+                              <Node
+                                row={rowIndex}
+                                col={nodeIndex}
+                                key={rowIndex + "-" + nodeIndex}
+                                isStart={isStart}
+                                isFinish={isFinish}
+                                isWall={isWall}
+                                isWeight={isWeight}
+                                mouseIsPressed={mouseIsPressed}
+                                onMouseDown={(row, col) =>
+                                  this.handleMouseDown(row, col)
+                                }
+                                onMouseEnter={(row, col) =>
+                                  this.handleMouseEnter(row, col)
+                                }
+                                onMouseUp={() => this.handleMouseUp()}
+                              ></Node>
+                            );
+                          })}
+                        </tr>
+                      );
+                    })}
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
-        </div>
-        {/*Information about the algorithm*/}
+          {/*Information about the algorithm*/}
 
-        <Info runningAlgo={this.state.running}></Info>
+          <Info runningAlgo={this.state.running}></Info>
+
+          <div className="PopUp">
+            <Guide />
+          </div>
+        </div>
       </>
     );
   }

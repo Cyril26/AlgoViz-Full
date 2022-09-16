@@ -79,7 +79,7 @@ export class Guide extends Component {
         <div className="skipBox">
           <small>
             *You can view this anytime by clicking on{" "}
-            <span>[Dijkstra's Algorithm]</span>
+            <span>[Pathfinder Visualizer]</span>
           </small>
           <button onClick={skipPopUp}>Done !</button>
         </div>
