@@ -1,0 +1,92 @@
+.buttons-bar {
+  height: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+button {
+  font-family: 'Poppins';
+  height: 50%;
+  border: none;
+  margin-left: 1%;
+  margin-right: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  /* border-radius: 5px; */
+  font-size: small;
+  color: rgb(0, 69, 119);
+  background-color: transparent;
+  transition: 0.3s;
+}
+
+@media only screen and (max-width: 510px) {
+  button {
+    font-size: xx-small;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  button {
+    font-size: x-small;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  button {
+    font-size: xx-small;
+  }
+}
+
+button:hover {
+  font-style: bold;
+  border-width: 0.3vh;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.buttonStyle1:hover {
+  font-style: bold;
+  opacity: 0.9;
+  background-color: #9acceb;
+  color: rgb(0, 33, 67);
+  font-weight: 500;
+}
+
+
+
+#reset {
+  /* opacity: 0.6; */
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+    font-weight: 500;
+    position: relative;
+    margin-left: 6px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    transition-duration: .8s;
+    color: rgb(0, 142, 87);
+    /* border-color: #48c9b0; */
+    border-radius: 5px;
+    background-color: none;
+}
+#reset:hover {
+  opacity: 0.9;
+  background-color: #87dfcc;
+  color: rgb(0, 33, 67);
+  font-weight: 500;
+}
+
+button:disabled,
+.buttonStyle1:disabled,
+.buttonStyle2:disabled,
+#reset:disabled {
+  background-color: grey;
+  color: white;
+  border-width: 0vw;
+  opacity: 1;
+  cursor: not-allowed;
+}

@@ -1,0 +1,60 @@
+
+.info-container {
+    color: rgb(0, 29, 67);
+    position: relative;
+    margin: 50px;
+    padding-bottom: 5px;
+  }
+
+  .info-container .info-head {
+    margin-bottom: 20px;
+    padding-top: 20px;
+    letter-spacing: 0.4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #cecece;
+}
+
+  
+  .info-container p{
+    letter-spacing: 0.1px;
+    line-height: 1.6em;
+    margin-bottom: 20px;
+    text-align: left;
+    font-size: medium;
+}
+
+.info-container .info-list {
+  margin: 20px 20px;
+  text-align: left;
+}
+
+.pseudocode {
+  text-align: left;
+  margin-bottom: 30px;
+  padding: 0 250px;
+  height: 200px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.code {
+    text-align: left;
+    padding: 0 250px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+  margin-bottom: 30px;
+
+}
+
+
+
+img{
+  width:60%;
+}
+
+.info-container .image-cap {
+  font-style: italic;
+}
