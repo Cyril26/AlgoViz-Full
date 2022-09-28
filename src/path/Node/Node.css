@@ -20,12 +20,43 @@
     background-position: center;
     background-size: cover;
 }
-
+/* 
 .pv .node-wall
 {
     border: 1px solid #34495e;
     background-color: #34495e;
 }
+ */
+
+.pv .node-wall {
+    animation-name: wallAnimation;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes wallAnimation {
+    0% {
+      transform: scale(.3);
+      background-color: rgb(12, 53, 71);
+    }
+  
+    50% {
+      transform: scale(1.2);
+      background-color: rgb(12, 53, 71);
+    }
+  
+    100% {
+      transform: scale(1.0);
+      background-color: rgb(12, 53, 71);
+    }
+  }
+
+
 .pv .node-weight
 {
     background-image: url(images/weight.png);
@@ -33,7 +64,9 @@
     background-position: center;
     background-size: cover;
 }
-.pv .node-visited
+
+
+/* .pv .node-visited
 {
     animation-name: visitedAnimation;
     animation-duration: 1.5s;
@@ -111,6 +144,59 @@
         background-size: cover;
     }
 }
+
+ */
+
+
+.pv .node-visited{
+    border: 1px solid rgb(175, 216, 248);
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  .pv .node-visitedWeight{
+    border: 1px solid rgb(175, 216, 248);
+    background-image: url(images/visitedWeight.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation-name: visitedAnimation;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+  }
+  
+  @keyframes visitedAnimation {
+    0% {
+      transform: scale(.3);
+      background-color: rgba(63, 1, 1, 0.75);
+      border-radius: 100%;
+    }
+  
+    50% {
+      background-color: rgba(176, 0, 0, 0.75);
+    }
+  
+    75% {
+      transform: scale(1.2);
+      background-color: rgba(217, 177, 0, 0.75)
+    }
+  
+    100% {
+      transform: scale(1.0);
+      background-color: rgba(0, 255, 145, 0.75);
+    }
+  }
 
 .pv .node-path
 {

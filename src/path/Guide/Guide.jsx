@@ -27,6 +27,7 @@ export class Guide extends Component {
 
         <div className="PopUpIntroductionText">
           <h3>Quick Walkthrough to Visualizer</h3>
+          <p>Click and drag to create walls </p>
           <div className="player">
             <label className="label" htmlFor="start">
               {" "}

@@ -16,7 +16,7 @@ export const Home = () => {
           Sorting
         </Link>
         <Link to="pathfinder" className="btn-conn btn2" style={textDeco}>
-          Pathfinder
+          Pathfinding
         </Link>
       </div>
 
